@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.countainer1{
+
+    height: 255px   
+
+}
+.title1{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 60px;
+   margin-left: 630px;
+}
+.img1{
+    width: 180px;
+    height: 180px;
+    margin-top: 40px;
+    margin-left: 780px;
+}
+.countainer2{
+
+    margin-left: 700px;
+    margin-right: 900px;
+}
+.tema1{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tema1 > .camisas1{
+    text-decoration: none;
+    color: black;
+}
+
+.countainer3{
+
+    margin-left: 700px;
+    margin-right: 900px;
+}
+.tema2{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tema2 > .ingressos1{
+    text-decoration: none;
+    color: black;
+}
+
+.countainer4{
+
+    margin-left: 700px;
+    margin-right: 900px;
+
+}
+
+.tema3{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tema3 > .sobre1{
+    text-decoration: none;
+    color: black;
+}
