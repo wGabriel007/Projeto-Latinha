@@ -89,8 +89,8 @@ body{
     text-align: center;
 }
 
-.rodape > .ig-emoji{
-    width: 100px;
-    height: auto;
+.rodape > .ig-emoji {
+    width: 50px !important;
+    height: auto !important;
     margin-left: 1600px;
 }
