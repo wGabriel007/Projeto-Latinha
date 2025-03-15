@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    height: 100vh;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background: linear-gradient(135deg, #f39c12, #e74c3c, #9b59b6, #3498db);
     background-size: 400% 400%;
     animation: gradientBG 8s ease infinite;
@@ -20,6 +20,33 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+.titulo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    animation: mexerTexto 2s infinite ease-in-out;
+}
+
+@keyframes mexerTexto {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
 .painel {
     text-align: center;
@@ -27,7 +54,7 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    width: 60%;
+    width: 30%;
     margin: auto;
 }
 
@@ -43,7 +70,7 @@ body {
     content: "";
     position: absolute;
     top: 20%;
-    left: 46%;
+    left: 43%;
     transform: translate(-20%, -20%);
     background: url('imagens/bloco.png') no-repeat center center;
     background-size: contain;
@@ -68,4 +95,46 @@ body {
 .painel button:hover {
     transform: scale(1.1);
     background-color: #27ae60;
+}
+footer {
+    position: fixed; /* Fixa o rodapé no fundo da página */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer .apoios {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #3498db; /* Cor ao passar o mouse */
+}
+
+footer .instagram-logo {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer .instagram-logo img {
+    width: 32px; /* Tamanho do ícone */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+footer .instagram-logo img:hover {
+    transform: scale(1.1); /* Efeito de "zoom" ao passar o mouse */
 }
