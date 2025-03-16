@@ -13,7 +13,48 @@ body {
     background: linear-gradient(135deg, #f39c12, #e74c3c, #9b59b6, #3498db);
     background-size: 400% 400%;
     animation: gradientBG 8s ease infinite;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255); /* Cor de fundo se necessário */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  #logo {
+    width: 200px; /* Ajuste o tamanho do logo */
+    opacity: 0.5; /* Tornando a imagem um pouco transparente */
+  }
+ .temap{
+    font-family: monospace;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(to right, red, yellow, green, blue, purple);
+    -webkit-background-clip: text;
+    animation: glow 1.5s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px red, 0 0 10px yellow, 0 0 15px green, 0 0 20px blue, 0 0 25px purple;
+    }
+    to {
+      text-shadow: 0 0 10px yellow, 0 0 15px green, 0 0 20px blue, 0 0 25px purple, 0 0 30px red;
+    }
+  }
 
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
